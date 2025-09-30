@@ -80,7 +80,7 @@ int main(int argc, char* argv[]) {
 				std::cout << "Student index, new GPA: ";
 				std::cin >> ptr >> nG;
 				if (ptr < 0 || ptr >= size){
-					throw("Index is Out of Bounds!");
+					std::cout << "Index is Out of Bounds!" << std::endl;
 					break;
 				}
 				updateGPA(&gpas[ptr], nG);
